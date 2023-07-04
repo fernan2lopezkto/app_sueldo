@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+}
+
+header {
+  background-color: mediumaquamarine;
+  box-shadow: 20px;box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  padding: 20px;
+}

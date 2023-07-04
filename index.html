@@ -7,11 +7,15 @@
 
 <title>Calculadora de sueldo</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+
   
 </head>
 
-<body style="text-align: center">
-<h1 style="margin-top: 20px"><strong style="color: green">Calculardora de sueldo</strong></h1>
+<body>
+  <header>
+<h1><strong style="color: green; text-align: center">Calculsueldo</strong></h1>
+  </header>
 
 <!-- Project -->
 <!-- instructions -->
@@ -72,29 +76,9 @@
 
 <!-- Scriptsss -->
 
-<script>
-
-  const sueldoBase = 32420;
-  const descuentos = 21;
-  const diaDeFalta = 1000;
-  const valorHora = 135;
-
-  function calcularSueldo () {
-
-    var cantDeHorasExtras = document.getElementById("HorasExtras").value;
-    var cantDeFaltas = document.getElementById("Faltas").value;
-
-    var dineroPorHorasExtras = 2 * valorHora * cantDeHorasExtras;
-    
-    var dineroPorFaltas = valorHora * 8 * cantDeFaltas;
-
-    var sueldoNominal = sueldoBase + dineroPorHorasExtras - dineroPorFaltas;
-
-    var sueldoLiquido = sueldoNominal * (1 - (descuentos/100));
+<script src="scripts.js">
 
 
-    document.getElementById("Sueldo").value = Math.round(sueldoLiquido);
-  }
   
 </script>
 
