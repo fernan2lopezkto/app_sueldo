@@ -19,3 +19,13 @@
 
     document.getElementById("Sueldo").value = Math.round(sueldoLiquido);
   }
+  
+  
+  
+  
+/* otras funciones*/
+
+function irAAgregarDatos() {
+      window.location.href = "agregarDatos.html";
+      }
+      
