@@ -16,7 +16,7 @@
 
     var sueldoNominal = sueldoBase + dineroPorHorasExtras - dineroPorFaltas;
 
-    var sueldoLiquido = (sueldoNominal * (1 - (descuentos/100)));
+    var sueldoLiquido = (sueldoNominal * (1 - (descuentos/100))) - 15500;
 
 
     document.getElementById("Sueldo").value = Math.round(sueldoLiquido);
