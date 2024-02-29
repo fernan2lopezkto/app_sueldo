@@ -1,7 +1,7 @@
   const sueldoBase = 35369;
   const descuentos = 21;
   const diaDeFalta = 1000;
-  const retencion = 12354;
+  const retencion = 15354;
   const otrosDescuentos = 3000;
   const valorHora = 135;
 
